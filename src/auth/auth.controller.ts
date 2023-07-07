@@ -12,7 +12,7 @@ export class AuthController {
   }
 
   @Post('signin')
-  signin(): string {
+  signin(@Body() dto: AuthDto): string {
     return 'I am signed in'
   }
 }
