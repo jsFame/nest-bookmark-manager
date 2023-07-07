@@ -1,7 +1,17 @@
 POST {{u}}/auth/signup
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data;"
+
+email=laciferin@gmail.com
+--WebAppBoundary--
+
+###
+
+POST {{u}}/auth/signup
 Content-Type: application/json
 
-{}
 
 ###
 
