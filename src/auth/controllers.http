@@ -1,3 +1,16 @@
+POST {{u}}/auth/signup
+Content-Type: application/json
+
+{}
+
+###
+
+POST {{u}}/auth/signin
+Content-Type: application/json
+
+{}
+
+###
 GET {{u}}
 Accept: application/json
 
