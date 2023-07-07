@@ -1,24 +1,16 @@
 POST {{u}}/auth/signup
-Content-Type: multipart/form-data; boundary=WebAppBoundary
+Content-Type: application/x-www-form-urlencoded
 
---WebAppBoundary
-Content-Disposition: form-data;"
-
-email=laciferin@gmail.com
---WebAppBoundary--
-
-###
-
-POST {{u}}/auth/signup
-Content-Type: application/json
+email=laciferin@gmail.com&password=hiHelloGiberrish@123
 
 
 ###
 
 POST {{u}}/auth/signin
-Content-Type: application/json
+Content-Type: application/x-www-form-urlencoded
 
-{}
+email=laciferin@gmail.com&password=123
+
 
 ###
 GET {{u}}
