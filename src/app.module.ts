@@ -7,11 +7,13 @@ import { AuthModule } from "./auth/auth.module"
 import { PrismaModule } from "./prisma/prisma.module"
 import { ConfigModule } from "@nestjs/config"
 import * as Joi from "joi"
+import { JwtModule } from "@nestjs/jwt"
 
 @Module({
   imports: [
     AuthModule,
     PrismaModule,
+    JwtModule,
     ConfigModule.forRoot({
       envFilePath: [".env-local", ".env"],
       isGlobal: true,
