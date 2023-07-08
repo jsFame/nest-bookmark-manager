@@ -1,7 +1,7 @@
 POST {{u}}/auth/signup
 Content-Type: application/x-www-form-urlencoded
 
-email=laciferin121@gmail.com&password=hiHelloGiberrish@123
+email=hiro@gmail.com&password=hiHelloGiberrish@123
 
 
 ###
@@ -9,7 +9,7 @@ email=laciferin121@gmail.com&password=hiHelloGiberrish@123
 POST {{u}}/auth/signin
 Content-Type: application/x-www-form-urlencoded
 
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
+email=hiro@gmail.com&password=hiHelloGiberrish@123
 
 
 ###
