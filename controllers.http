@@ -9,7 +9,7 @@ email=laciferin@gmail.com&password=hiHelloGiberrish@123
 POST {{u}}/auth/signin
 Content-Type: application/x-www-form-urlencoded
 
-email=laciferin@gmail.com&password=123
+email=laciferin@gmail.com&password=hiHelloGiberrish@123
 
 
 ###

@@ -12,7 +12,7 @@ datasource db {
 }
 
 model User {
-  id        Int      @id @default(autoincrement()) @db.Integer
+  id        Int      @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -23,6 +23,7 @@ model User {
   lastName  String?
   bookmarks Bookmark[]
 
+  @@id(fields: [id])
   @@map("users")
 }
 
