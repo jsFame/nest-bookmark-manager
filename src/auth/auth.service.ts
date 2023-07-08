@@ -55,21 +55,21 @@ export class AuthService {
 
     if (!pwMatches) throw new ForbiddenException("invalid credentials")
 
-    delete user.hash
-
-    const token = await this.signToken(user.id, user.email)
-    return { token }
+    return this.signToken(user.id, user.email)
   }
 
-  signToken(userId: number, email: string) {
+  async signToken(userId: number, email: string) {
     const payload = {
       sub: userId,
       email,
     }
     const secret = this.config.get("JWT_SECRET")
-    return this.jwt.signAsync(payload, {
-      expiresIn: "15m",
-      secret: secret,
-    })
+
+    return {
+      access_token: await this.jwt.signAsync(payload, {
+        expiresIn: "15m",
+        secret: secret,
+      }),
+    }
   }
 }
