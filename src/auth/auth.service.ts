@@ -3,10 +3,11 @@ import { PrismaService } from "../prisma/prisma.service"
 import { AuthDto } from "./dto"
 import { PrismaClientKnownRequestError, PrismaClientUnknownRequestError } from "@prisma/client/runtime"
 import * as argon from "argon2"
+import { JwtService } from "@nestjs/jwt"
 
 @Injectable()
 export class AuthService {
-  constructor(private prisma: PrismaService) {}
+  constructor(private prisma: PrismaService, private jwt: JwtService) {}
 
   async signup(dto: AuthDto) {
     const hash = await argon.hash(dto.password)
