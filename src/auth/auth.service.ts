@@ -11,9 +11,12 @@ export class AuthService {
   async signup(dto: AuthDto) {
     const hash = await argon.hash(dto.password)
 
+    const count = await this.prisma.user.count()
+
     try {
       const user = await this.prisma.user.create({
         data: {
+          id: count + 1,
           email: dto.email,
           hash: hash,
         },
@@ -28,8 +31,14 @@ export class AuthService {
       return user
     } catch (error) {
       if (error instanceof PrismaClientKnownRequestError) {
-        if (error.code == "P2002") throw new ForbiddenException("credentials taken")
+        console.error({
+          code: error.code,
+        })
+        if (error.code == "P2002") {
+          throw new ForbiddenException("credentials taken")
+        }
       }
+      throw new ForbiddenException("credentials taken")
       throw error
     }
   }
