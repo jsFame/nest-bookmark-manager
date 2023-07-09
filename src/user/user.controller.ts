@@ -15,6 +15,7 @@ export class UserController {
     return user
   }
 
+  @UseGuards(JwtGuard)
   @Patch()
   editUser(@GetUser("id") userId: number, @Body() dto: EditUserDto) {
     //needs service
