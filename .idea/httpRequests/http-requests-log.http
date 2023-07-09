@@ -1,4 +1,41 @@
 GET http://localhost:1606/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTM2NywiZXhwIjoxNjg4ODYyMjY3fQ.3ILYb3k-wCHepqmjcOPI75Q4LER40T5ngIRQEr3zEyY
+Content-Length: 24
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Accept: application/json
+
+<> 2023-07-09T054051.200.html
+
+###
+
+POST http://localhost:1606/auth/signin
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 50
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+email=hiro@gmail.com&password=hiHelloGiberrish@123
+
+<> 2023-07-09T053927.201.json
+
+###
+
+GET http://localhost:1606/users/me
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-09T053823.401.json
+
+###
+
+GET http://localhost:1606/users/me
 Accept: application/json
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
@@ -601,45 +638,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 email=laciferin@gmail.com&password=hiHelloGiberrish@123
 
 <> 2023-07-08T072246.201.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T064727.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T063452.201.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T063406.500.json
 
 ###
 
