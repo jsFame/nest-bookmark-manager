@@ -1,8 +1,8 @@
-import { Body, Controller, Delete, Get, Patch, UseGuards } from "@nestjs/common"
+import { Body, Controller, Delete, Get, Param, ParseIntPipe, Patch, Post, UseGuards } from "@nestjs/common"
 import { JwtGuard } from "../auth/guard"
 import { BookmarkService } from "./bookmark.service"
 import { GetUser } from "../auth/decorator"
-import { EditBookmarkDto } from "./dto"
+import { CreateBookmarkDto, EditBookmarkDto } from "./dto"
 
 @UseGuards(JwtGuard)
 @Controller("bookmarks")
@@ -14,18 +14,27 @@ export class BookmarkController {
     return this.bookmarkService.getAll(userId)
   }
 
-  @Get(":bookmarkId") //TODO: params
-  getBookmark(bookmarkId: number) {
+  @Get(":id") //TODO: params
+  getBookmark(@Param("id", ParseIntPipe) bookmarkId: number) {
     return this.bookmarkService.get(bookmarkId)
   }
 
-  @Patch(":bookmarkId") //TODO: params
-  editBookmark(bookmarkId: number, @Body() dto: EditBookmarkDto) {
+  @Post()
+  createBookmark(@GetUser("userId") userId: number, @Body() dto: CreateBookmarkDto) {
+    return this.bookmarkService.create(userId, dto)
+  }
+
+  @Patch(":id")
+  editBookmark(
+    @Param("id", ParseIntPipe) bookmarkId: number,
+    @GetUser("userId") userId: number,
+    @Body() dto: EditBookmarkDto,
+  ) {
     return this.bookmarkService.edit(bookmarkId, dto)
   }
 
-  @Delete(":bookmarkId") //TODO: params
-  deleteBookmark(bookmarkId: number) {
+  @Delete(":id") //TODO: params
+  deleteBookmark(@Param("id", ParseIntPipe) bookmarkId: number) {
     return this.bookmarkService.delete(bookmarkId)
   }
 }

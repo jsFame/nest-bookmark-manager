@@ -6,6 +6,7 @@ import * as pactum from "pactum"
 import { ConfigService } from "@nestjs/config"
 import { AuthDto } from "../src/auth/dto"
 import { EditUserDto } from "../src/user/dto"
+import { CreateBookmarkDto } from "../src/bookmark/dto"
 
 describe("App e2e", () => {
   let app: INestApplication
@@ -152,8 +153,36 @@ describe("App e2e", () => {
   })
 
   describe("Bookmark", () => {
-    describe("Create Bookmark", function () {})
-    describe("Get Bookmarks", function () {})
+    describe("Get Bookmarks", function () {
+      it("should get empty bookmarks", () => {
+        return pactum
+          .spec()
+          .withHeaders({
+            Authorization: `Bearer $S{userToken}`,
+          })
+          .get("/bookmarks")
+          .expectStatus(200)
+          .expectBody([])
+      })
+    })
+    describe("Create Bookmark", function () {
+      const dto: CreateBookmarkDto = {
+        title: "My 1st bookmark",
+        description: "my 1st bookmark",
+        link: "https://github.com/Nasfame",
+      }
+      it("should create bookmark", () => {
+        return pactum
+          .spec()
+          .withHeaders({
+            Authorization: `Bearer $S{userToken}`,
+          })
+          .withBody(dto)
+          .post("/bookmarks")
+          .expectStatus(HttpStatus.CREATED)
+          .inspect()
+      })
+    })
     describe("Get Bookmark by Id", function () {})
     describe("Edit Bookmark by Id", function () {})
     describe("Delete Bookmark by Id", function () {})
