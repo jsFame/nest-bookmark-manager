@@ -10,6 +10,7 @@ import * as Joi from "joi"
 import { JwtModule } from "@nestjs/jwt"
 import { UserController } from "./user/user.controller"
 import { UserModule } from "./user/user.module"
+import { UserService } from "./user/user.service"
 
 @Module({
   imports: [
@@ -28,6 +29,6 @@ import { UserModule } from "./user/user.module"
     UserModule,
   ],
   controllers: [AppController, AuthController, UserController],
-  providers: [AppService, AuthService],
+  providers: [AppService, AuthService, UserService],
 })
 export class AppModule {}
