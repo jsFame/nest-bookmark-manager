@@ -103,7 +103,21 @@ describe("App e2e", () => {
   })
 
   describe("User", () => {
-    describe("Get me", () => {})
+    describe("Get me", () => {
+      it("should fail without header", () => {
+        return pactum.spec().get("/users/me").expectStatus(401)
+      })
+
+      it("should get current user", () => {
+        return pactum
+          .spec()
+          .withHeaders({
+            Authorization: `Bearer $S{userToken}`,
+          })
+          .get("/users/me")
+          .expectStatus(200)
+      })
+    })
     describe("Edit me", () => {})
   })
 
