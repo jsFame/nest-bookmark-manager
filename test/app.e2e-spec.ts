@@ -130,11 +130,23 @@ describe("App e2e", () => {
           .withHeaders({
             Authorization: `Bearer $S{userToken}`,
           })
-          .post("/users")
+          .patch("/users")
           .withBody(dto)
           .expectStatus(200)
           .expectBodyContains(dto.firstName)
           .expectBodyContains(dto.lastName)
+      })
+    })
+
+    describe("Delete User", () => {
+      it("should delete current user", () => {
+        return pactum
+          .spec()
+          .withHeaders({
+            Authorization: `Bearer $S{userToken}`,
+          })
+          .delete("/users")
+          .expectStatus(HttpStatus.OK)
       })
     })
   })

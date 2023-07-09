@@ -11,6 +11,7 @@ import { JwtModule } from "@nestjs/jwt"
 import { UserController } from "./user/user.controller"
 import { UserModule } from "./user/user.module"
 import { UserService } from "./user/user.service"
+import { BookmarkModule } from "./bookmark/bookmark.module"
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { UserService } from "./user/user.service"
       }),
     }),
     UserModule,
+    BookmarkModule,
   ],
   controllers: [AppController, AuthController, UserController],
   providers: [AppService, AuthService, UserService],

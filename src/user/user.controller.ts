@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Patch, UseGuards } from "@nestjs/common"
+import { Body, Controller, Delete, Get, Patch, UseGuards } from "@nestjs/common"
 import { JwtGuard } from "../auth/guard"
 import { GetUser } from "../auth/decorator"
 import { User } from "@prisma/client"
@@ -21,5 +21,14 @@ export class UserController {
     //needs service
     // we will get something in api request due to whitelist:true
     return this.userService.editUser(userId, dto)
+  }
+
+  @UseGuards(JwtGuard)
+  @Delete()
+  async deleteUser(@GetUser("userId") userId: number) {
+    return {
+      message: "user deleted",
+      user: await this.userService.deleteUser(userId),
+    }
   }
 }
