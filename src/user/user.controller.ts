@@ -17,7 +17,7 @@ export class UserController {
 
   @UseGuards(JwtGuard)
   @Patch()
-  editUser(@GetUser("id") userId: number, @Body() dto: EditUserDto) {
+  editUser(@GetUser("userId") userId: number, @Body() dto: EditUserDto) {
     //needs service
     // we will get something in api request due to whitelist:true
     return this.userService.editUser(userId, dto)

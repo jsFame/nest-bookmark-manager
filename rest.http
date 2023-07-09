@@ -1,5 +1,15 @@
+PATCH {{u}}/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
+
+{
+  "firstName": "Baymax",
+  "lastName": "Hamada"
+}
+
+###
 GET {{u}}/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
 
 Accept: application/json
 

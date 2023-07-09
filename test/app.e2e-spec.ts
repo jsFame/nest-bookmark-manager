@@ -133,6 +133,8 @@ describe("App e2e", () => {
           .post("/users")
           .withBody(dto)
           .expectStatus(200)
+          .expectBodyContains(dto.firstName)
+          .expectBodyContains(dto.lastName)
       })
     })
   })
