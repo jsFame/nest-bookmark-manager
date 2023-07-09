@@ -1,11 +1,16 @@
 import { Test } from "@nestjs/testing"
 import { AppModule } from "../src/app.module"
-import { INestApplication, ValidationPipe } from "@nestjs/common"
+import { HttpStatus, INestApplication, ValidationPipe } from "@nestjs/common"
 import { PrismaService } from "../src/prisma/prisma.service"
+import * as pactum from "pactum"
+import { ConfigService } from "@nestjs/config"
+import { AuthDto } from "../src/auth/dto"
 
 describe("App e2e", () => {
   let app: INestApplication
   let prisma: PrismaService
+
+  let url: string
   beforeAll(async () => {
     const ModuleRef = await Test.createTestingModule({
       imports: [AppModule],
@@ -13,6 +18,9 @@ describe("App e2e", () => {
     app = ModuleRef.createNestApplication()
     app.useGlobalPipes(new ValidationPipe({ whitelist: true }))
     await app.init()
+    const port = app.get(ConfigService).get("PORT") || 3333
+    url = `http://localhost:${port}`
+    await app.listen(port)
     prisma = app.get(PrismaService)
     await prisma.cleanDb()
   })
@@ -24,7 +32,13 @@ describe("App e2e", () => {
 
   describe("Auth", function () {
     describe("Sign up", () => {
-      it.todo("Should signup")
+      const dto: AuthDto = {
+        email: "hiro_tests@gmail.com",
+        password: "testing@rQfAPjfVsreWGz2",
+      }
+      it("should signup", () => {
+        return pactum.spec().post(`${url}/auth/signup`).withBody(dto).expectStatus(HttpStatus.CREATED)
+      })
     })
     describe("Sign in", () => {
       it.todo("Should signin")
