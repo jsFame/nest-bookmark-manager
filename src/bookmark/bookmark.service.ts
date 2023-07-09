@@ -14,7 +14,13 @@ export class BookmarkService {
     })
   }
 
-  get(id: number) {}
+  get(id: number) {
+    return this.prisma.bookmark.findUnique({
+      where: {
+        id,
+      },
+    })
+  }
 
   async create(userId: number, dto: CreateBookmarkDto) {
     const bookmark = await this.prisma.bookmark.create({
@@ -26,7 +32,19 @@ export class BookmarkService {
     return bookmark
   }
 
-  edit(id: number, dto: EditBookmarkDto) {}
+  async edit(id: number, dto: EditBookmarkDto) {
+    const bookmark = await this.prisma.bookmark.update({
+      where: {
+        id,
+      },
+      data: {
+        ...dto,
+      },
+    })
+    return bookmark
+  }
 
-  delete(id: number) {}
+  delete(id: number) {
+    return this.prisma.bookmark.delete({ where: { id } })
+  }
 }
