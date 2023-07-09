@@ -23,6 +23,7 @@ describe("App e2e", () => {
     await app.listen(port)
     prisma = app.get(PrismaService)
     await prisma.cleanDb()
+    pactum.request.setBaseUrl(url)
   })
   it.todo("should pass")
 
@@ -38,6 +39,40 @@ describe("App e2e", () => {
       }
       it("should signup", () => {
         return pactum.spec().post(`${url}/auth/signup`).withBody(dto).expectStatus(HttpStatus.CREATED).inspect()
+      })
+
+      it("should throw if email empty", () => {
+        return pactum
+          .spec()
+          .post("/auth/signup")
+          .withBody({
+            password: dto.password,
+          })
+          .expectStatus(400)
+          .inspect()
+      })
+
+      it("should throw if password empty", () => {
+        return pactum
+          .spec()
+          .post("/auth/signup")
+          .withBody({
+            email: dto.email,
+          })
+          .expectStatus(400)
+          .inspect()
+      })
+
+      it("should throw if not strang  password", () => {
+        return pactum
+          .spec()
+          .post("/auth/signup")
+          .withBody({
+            email: dto.email,
+            password: "123",
+          })
+          .expectStatus(400)
+          .inspect()
       })
     })
     describe("Sign in", () => {
