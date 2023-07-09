@@ -8,6 +8,8 @@ import { PrismaModule } from "./prisma/prisma.module"
 import { ConfigModule } from "@nestjs/config"
 import * as Joi from "joi"
 import { JwtModule } from "@nestjs/jwt"
+import { UserController } from "./user/user.controller"
+import { UserModule } from "./user/user.module"
 
 @Module({
   imports: [
@@ -23,8 +25,9 @@ import { JwtModule } from "@nestjs/jwt"
         PORT: Joi.number().default(1606),
       }),
     }),
+    UserModule,
   ],
-  controllers: [AppController, AuthController],
+  controllers: [AppController, AuthController, UserController],
   providers: [AppService, AuthService],
 })
 export class AppModule {}

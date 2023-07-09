@@ -1,3 +1,13 @@
+GET http://localhost:1606/users/me
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-09T053536.200.html
+
+###
+
 POST http://localhost:1606/auth/signin
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 50
@@ -630,19 +640,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 email=laciferin@gmail.com&password=hiHelloGiberrish@123
 
 <> 2023-07-08T063406.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T063300.500.json
 
 ###
 
