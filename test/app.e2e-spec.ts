@@ -37,7 +37,7 @@ describe("App e2e", () => {
         password: "testing@rQfAPjfVsreWGz2",
       }
       it("should signup", () => {
-        return pactum.spec().post(`${url}/auth/signup`).withBody(dto).expectStatus(HttpStatus.CREATED)
+        return pactum.spec().post(`${url}/auth/signup`).withBody(dto).expectStatus(HttpStatus.CREATED).inspect()
       })
     })
     describe("Sign in", () => {
