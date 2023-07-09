@@ -32,11 +32,11 @@ describe("App e2e", () => {
   })
 
   describe("Auth", function () {
+    const dto: AuthDto = {
+      email: "hiro_tests@gmail.com",
+      password: "testing@rQfAPjfVsreWGz2",
+    }
     describe("Sign up", () => {
-      const dto: AuthDto = {
-        email: "hiro_tests@gmail.com",
-        password: "testing@rQfAPjfVsreWGz2",
-      }
       it("should signup", () => {
         return pactum.spec().post(`${url}/auth/signup`).withBody(dto).expectStatus(HttpStatus.CREATED).inspect()
       })
@@ -76,7 +76,29 @@ describe("App e2e", () => {
       })
     })
     describe("Sign in", () => {
-      it.todo("Should signin")
+      it("should throw if password empty", () => {
+        return pactum
+          .spec()
+          .post("/auth/signin")
+          .withBody({
+            email: dto.email,
+          })
+          .expectStatus(400)
+          .inspect()
+      })
+      it("should throw if email empty", () => {
+        return pactum
+          .spec()
+          .post("/auth/signin")
+          .withBody({
+            password: dto.password,
+          })
+          .expectStatus(400)
+          .inspect()
+      })
+      it("should sigin", () => {
+        return pactum.spec().post("/auth/signin").withBody(dto).expectStatus(200).stores("userToken", "access_token")
+      })
     })
   })
 
