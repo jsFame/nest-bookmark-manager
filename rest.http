@@ -1,5 +1,5 @@
 GET {{u}}/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTM2NywiZXhwIjoxNjg4ODYyMjY3fQ.3ILYb3k-wCHepqmjcOPI75Q4LER40T5ngIRQEr3zEyY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
 
 Accept: application/json
 
@@ -21,5 +21,4 @@ email=hiro@gmail.com&password=hiHelloGiberrish@123
 ###
 GET {{u}}
 Accept: application/json
-
 

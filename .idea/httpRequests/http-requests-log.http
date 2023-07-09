@@ -1,4 +1,139 @@
 GET http://localhost:1606/users/me
+Authorization: Bearer eyJrhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
+Content-Length: 24
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Accept: application/json
+
+<> 2023-07-09T055520.401.json
+
+###
+
+GET http://localhost:1606/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
+Content-Length: 24
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Accept: application/json
+
+<> 2023-07-09T055515.200.html
+
+###
+
+POST http://localhost:1606/auth/signin
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+email=hiro19999@gmail.com&password=hiHelloGiberrish@123
+
+<> 2023-07-09T055158.403.json
+
+###
+
+POST http://localhost:1606/auth/signin
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+email=hiro1@gmail.com&password=hiHelloGiberrish@123
+
+<> 2023-07-09T055147.403.json
+
+###
+
+POST http://localhost:1606/auth/signin
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 50
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+email=hiro@gmail.com&password=hiHelloGiberrish@123
+
+<> 2023-07-09T055143.201.json
+
+###
+
+POST http://localhost:1606/auth/signup
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 50
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+email=hiro@gmail.com&password=hiHelloGiberrish@123
+
+<> 2023-07-09T055139.403.json
+
+###
+
+GET http://localhost:1606/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
+Content-Length: 24
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Accept: application/json
+
+<> 2023-07-09T055132.200.html
+
+###
+
+GET http://localhost:1606/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
+Content-Length: 24
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Accept: application/json
+
+<> 2023-07-09T054621.200.html
+
+###
+
+GET http://localhost:1606/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
+Content-Length: 24
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Accept: application/json
+
+<> 2023-07-09T054549.200.html
+
+###
+
+POST http://localhost:1606/auth/signin
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 50
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+email=hiro@gmail.com&password=hiHelloGiberrish@123
+
+<> 2023-07-09T054514.201.json
+
+###
+
+GET http://localhost:1606/users/me
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTM2NywiZXhwIjoxNjg4ODYyMjY3fQ.3ILYb3k-wCHepqmjcOPI75Q4LER40T5ngIRQEr3zEyY
 Content-Length: 24
 Content-Type: */*; charset=UTF-8
@@ -510,134 +645,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 email=laciferin@gmail.com&password=hiHelloGiberrish@123
 
 <> 2023-07-08T073335.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T073320.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T073004.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T072751.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T072711.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T072614.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T072546.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T072435.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T072252.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=laciferin@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-08T072246.201.json
 
 ###
 
