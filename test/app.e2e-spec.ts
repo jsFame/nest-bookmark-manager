@@ -21,4 +21,27 @@ describe("App e2e", () => {
   afterAll(async () => {
     await app.close()
   })
+
+  describe("Auth", function () {
+    describe("Sign up", () => {
+      it.todo("Should signup")
+    })
+    describe("Sign in", () => {
+      it.todo("Should signin")
+    })
+  })
+
+  describe("User", () => {
+    describe("Get me", () => {})
+    describe("Edit me", () => {})
+  })
+
+  describe("Bookmark", () => {
+    describe("Create Bookmark", function () {})
+    describe("Get Bookmarks", function () {})
+    describe("Get Bookmark by Id", function () {})
+    describe("Edit Bookmark", function () {})
+    describe("Update Bookmark", function () {})
+    describe("Delete Bookmark", function () {})
+  })
 })
