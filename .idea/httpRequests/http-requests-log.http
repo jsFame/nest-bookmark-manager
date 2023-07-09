@@ -11,6 +11,153 @@ Accept-Encoding: br,deflate,gzip,x-gzip
   "lastName": "Hamada"
 }
 
+<> 2023-07-09T081359.500.json
+
+###
+
+GET http://localhost:1606/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
+Content-Length: 24
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Accept: application/json
+
+<> 2023-07-09T081353-1.200.json
+
+###
+
+GET http://localhost:1606/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
+Content-Length: 24
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+Accept: application/json
+
+<> 2023-07-09T081353.200.json
+
+###
+
+PATCH http://localhost:1606/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "Baymax",
+  "lastName": "Hamada"
+}
+
+<> 2023-07-09T081244.500.json
+
+###
+
+PATCH http://localhost:1606/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "Baymax",
+  "lastName": "Hamada"
+}
+
+<> 2023-07-09T081231.500.json
+
+###
+
+PATCH http://localhost:1606/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "Baymax",
+  "lastName": "Hamada"
+}
+
+<> 2023-07-09T081149.500.json
+
+###
+
+PATCH http://localhost:1606/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "Baymax",
+  "lastName": "Hamada"
+}
+
+<> 2023-07-09T081019.500.json
+
+###
+
+PATCH http://localhost:1606/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "Baymax",
+  "lastName": "Hamada"
+}
+
+<> 2023-07-09T081009.500.json
+
+###
+
+PATCH http://localhost:1606/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "Baymax",
+  "lastName": "Hamada"
+}
+
+<> 2023-07-09T081006.500.json
+
+###
+
+PATCH http://localhost:1606/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDgwMDM3NzM2MjIxOTAwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2OTM0NiwiZXhwIjoxNjg4ODcyOTQ2fQ.FLYpqmp-2NiwETAcmaDmd3VG1M8_vZCmoFQxb5SSf_8
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "Baymax",
+  "lastName": "Hamada"
+}
+
 <> 2023-07-09T080929.500.json
 
 ###
@@ -621,127 +768,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 email=hiro@gmail.com&password=hiHelloGiberrish@123
 
 <> 2023-07-09T065921.500.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 50
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=hiro@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-09T065831.500.json
-
-###
-
-GET http://localhost:1606/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
-Content-Length: 24
-Content-Type: */*; charset=UTF-8
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-Accept: application/json
-
-<> 2023-07-09T065827.401.json
-
-###
-
-GET http://localhost:1606/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
-Content-Length: 24
-Content-Type: */*; charset=UTF-8
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-Accept: application/json
-
-<> 2023-07-09T060708.200.json
-
-###
-
-GET http://localhost:1606/users/me
-Authorization: Bearer eyJrhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
-Content-Length: 24
-Content-Type: */*; charset=UTF-8
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-Accept: application/json
-
-<> 2023-07-09T055520.401.json
-
-###
-
-GET http://localhost:1606/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjg4MDczNjI3Mzg5MjE0NzIwMCwiZW1haWwiOiJoaXJvQGdtYWlsLmNvbSIsImlhdCI6MTY4ODg2MTcxNCwiZXhwIjoxNjg4ODY1MzE0fQ.3nmbdfM1XYScxCPZaeNIzoZs4aX4k4ejKRksRSSP5mQ
-Content-Length: 24
-Content-Type: */*; charset=UTF-8
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-Accept: application/json
-
-<> 2023-07-09T055515.200.html
-
-###
-
-POST http://localhost:1606/auth/signin
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 55
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=hiro19999@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-09T055158.403.json
-
-###
-
-POST http://localhost:1606/auth/signin
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 51
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=hiro1@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-09T055147.403.json
-
-###
-
-POST http://localhost:1606/auth/signin
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 50
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=hiro@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-09T055143.201.json
-
-###
-
-POST http://localhost:1606/auth/signup
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 50
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-email=hiro@gmail.com&password=hiHelloGiberrish@123
-
-<> 2023-07-09T055139.403.json
 
 ###
 
