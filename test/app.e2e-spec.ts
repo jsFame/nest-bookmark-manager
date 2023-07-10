@@ -27,7 +27,6 @@ describe("App e2e", () => {
     await prisma.cleanDb()
     pactum.request.setBaseUrl(url)
   })
-  it.todo("should pass")
 
   afterAll(async () => {
     await app.close()
